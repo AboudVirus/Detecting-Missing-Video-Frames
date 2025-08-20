@@ -31,8 +31,13 @@
 
 ```javascript
 function findMissingRanges(frames) {
-  if (!frames?.length) 
-    return { gaps: [], longest_gap: null, missing_count: 0 };
+  if (!frames?.length) {
+    return {
+      gaps: [],
+      longest_gap: null,
+      missing_count: 0
+    };
+   }
 
   const minFrame = Math.min(...frames);
   const maxFrame = Math.max(...frames);
@@ -59,7 +64,11 @@ function findMissingRanges(frames) {
     }
   }
 
-  return { gaps, longest_gap: longestGap, missing_count: missingCount };
+  return {
+     gaps,
+     longest_gap: longestGap,
+     missing_count: missingCount
+  };
 }
 
 const frames = [1, 2, 3, 5, 6, 10, 11, 16];
