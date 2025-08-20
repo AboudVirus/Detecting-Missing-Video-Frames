@@ -64,3 +64,14 @@ function findMissingRanges(frames) {
 
 const frames = [1, 2, 3, 5, 6, 10, 11, 16];
 console.log(findMissingRanges(frames));
+```
+---
+
+## ✅ Expected Output
+
+```js
+{
+  gaps: [ [ 4, 4 ], [ 7, 9 ], [ 12, 15 ] ],
+  longest_gap: [ 12, 15 ],
+  missing_count: 8
+}
